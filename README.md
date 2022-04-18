@@ -25,7 +25,7 @@
 * Tema: Agenda de Contatos
 * Foi utilizado o Bootstrap para tratamento de responsividades e algumas estilizações.
 
-* O projeto é estruturado  
+* Estrutura de pastas do projeto  
   * assets - para armazenar imagens
   * css - para armazenar folhas de estilos
   * js - para armazenar arquivos em java script
@@ -35,7 +35,7 @@
   * Página Inicial - visualização dos todos contatos em forma de cards juntamente com o layout do projeto.
   Para o layout:
   
-     1. Foi criado header para quantificar dos contatos existentes por tipos e filtrar uma busca por nome.
+     1. Foi criado header para quantificar os contatos existentes por tipos e filtrar uma busca por nome.
         ![6](https://user-images.githubusercontent.com/61212740/163781414-a5580c69-4739-4f36-a035-7463877126ab.gif)    
 
      2. Como também um aside para navegação entre as páginas existentes.
