@@ -1,0 +1,84 @@
+.style-top {
+    width: 94%;
+    height: 160px;
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 6%;
+}
+
+.img-user > img {
+    width: 130px;
+    height: 112px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+legend {
+    padding-top: 6px;
+}
+.legend-data > p {
+    font-size: 14px;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+.legend-data > p > span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu {
+    width: 6%;
+    height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #ACB5BD;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+.init-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ACB5BD;
+}
+
+.init-btn > a, .menu > ul > li > a {
+    margin: 5px;
+    text-decoration: none;
+    color: plum;
+}
+
+.init-btn > a > i {
+    font-size: 40px;
+}
+
+.menu > ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.menu > ul > li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.menu > ul > li > a > i {
+    font-size: 20px;
+}
+
+main {
+    padding-top: 175px;
+    margin-left: 7% !important;
+    margin-right: 2% !important;
+}

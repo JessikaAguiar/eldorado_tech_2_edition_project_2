@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!--    Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- CSS Jéssika Aguiar -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-layout.css">
+
+        <title>List Contacts</title>
+    </head>
+    <body>
+        <aside class="menu pt-2 pb-2">
+            <header class="init-btn">
+                <a class="btn" href="../index.html"><i class="fa-solid fa-house-chimney"></i></a>
+            </header>
+            <ul>
+                <li>
+                    <a class="btn" href="../pages/forms-contact.html">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn" href="../pages/list.html">
+                        <i class="fa-solid fa-rectangle-list"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn" href="../pages/list-blocked.html">
+                        <i class="fa-solid fa-skull-crossbones"></i>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <header class="style-top fixed-top">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="col-5 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                        <figure class="img-user d-flex">
+                            <img src="../assets/img/dash-user.png" alt="user">
+                            <legend>
+                                <h1>Jessika Aguiar</h1>
+                                <div class="legend-data d-flex">
+                                    <p><span id="friends"></span> friends</p>
+                                    <p><span id="works"></span> work</p>
+                                    <p><span id="others"></span> others</p>
+                                </div>
+                            </legend>
+                        </figure>
+                    </div>
+                    <div class="col-3 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-center align-items-center">
+                        <div class="form-group">
+                            <input type="text" onkeyup="filterTableName()" class="form-control" id="search" aria-describedby="search" placeholder="Search Names">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <section class="list">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">E-mail</th>
+                                    <th scope="col">Fone</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                                </thead>
+                                <tbody id="body-contacts"></tbody>
+                            </table>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="modal">
+            <div class="alingModal">
+                <section class="viewContact">
+                    <div class="container-fluid">
+                        <div class="row flex-row-reverse">
+                            <div class="col-1">
+                                <button id="closeModal" onclick="closeModal()">Fechar</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                Nome: <p id="nameValue"></p>
+                                Email: <p id="emailValue"></p>
+                                Fone: <p id="foneValue"></p>
+                                Status: <p id="statusValue"></p>
+                                Type: <p id="typeValue"></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- JS Jéssika Aguiar -->
+        <script src="../js/contact.js"></script>
+        <script src="../js/agenda.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/list.js"></script>
+
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <!--   Icons Font Awesomw     -->
+        <script src="https://kit.fontawesome.com/fd53371904.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>
